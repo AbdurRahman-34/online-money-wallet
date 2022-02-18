@@ -12,7 +12,7 @@
           Header-area
    --------------------------->
      <header>
-      <h1 class="text-5xl text-center m-12 font-bold text-blue-900 font-serif">Online Money Meanager</h1>
+      <h1 class="text-5xl text-center m-12 font-bold text-black font-serif">Online Money Meanager</h1>
     </header>
 
     <!---------------------------
@@ -30,21 +30,57 @@
          <div class="bg-violet-100 rounded flex flex-col items-center justify-start sm:ml-12 p-8 mb-11">
 
             <!-- Income section  -->
-            <h2>Income</h2>
+            <h2 class="font-semibold text-black text-2xl my-3">Ingcome</h2>
+            <div class="flex justify-center items-center w-full mb-4">
+                <p class="text-black font-medium mx-4 text-right font-mono text-base w-1/4">Income</p>
+                <!-- income input -->
+                <input id="income" class="px-2 py-1 rounded block w-3/4" placeholder="Enter a number" type="text" value="0">
+              </div>
+
+            
+            <!-- Expenses Section -->
+                <h2 class="font-semibold text-black text-lg mt-3">Expenses</h2>
+                <div class="flex justify-between items-center w-full">
+                <p class="text-black mx-4 text-right font-mono text-base w-1/4">Food</p>
+            <!-- food input -->
+            <input id="food" class="px-2 py-1 my-3 rounded block w-3/4" placeholder="Enter a number" type="text" value="0">
+            </div>
+            <div class="flex justify-between items-center w-full">
+            <p class="text-black mx-4 text-right font-mono text-base w-1/4">Rent</p>
+          <!-- rent input -->
+            <input id="rent" class="px-2 py-1 my-3 rounded block w-3/4" placeholder="Enter a number" type="text" value="0">
+            </div>
+            <div class="flex justify-between items-center w-full">
+            <p class="text-black mx-4 text-right font-mono text-base w-1/4">Cloth</p>
+          <!-- cloth input -->
+          <input id="cloth" class="px-2 py-1 my-3 rounded block w-3/4" placeholder="Enter a number" type="text" value="0">
+        </div>
+
+        <!-- calculate total button-->
+        <button id="calculate-btn" class=" bg-blue-900 border-2 text-pink-100 text-lg px-12 py-1 mt-3 rounded-full font-semibold">Calculate</button>
+
+        <!-- total expenses display -->
+        <h2 id="expenses" class="font-semibold text-black text-lg mt-3">Total Expenses : 0$</h2>
+        <!-- total balance display -->
+        <h2 id="balance" class="font-semibold text-black text-lg mb-3">Balance : 0$</h2>
+
+        <!-- saving section -->
+        <div class="flex justify-between items-center lg:flex-row flex-col w-full">
+          <div class="flex justify-between items-center w-full lg:w-2/3">
+            <p class="text-black mx-4 text-right font-mono text-base w-1/6">Save</p>
+            <!-- cloth input -->
+            <input id="savingPercent" class="px-2 py-1 my-3 rounded block w-2/6" placeholder="Percent" type="text" value="0">
+            <p class="text-black mx-4 text-left font-mono text-base w-1/6">%</p>
+          </div>
+          <button id="save-btn" class="bg-blue-900 w-1/2 sm:w-1/3 border-2 text-white text-md py-1 my-1 rounded-full font-semibold">Save</button>
+        </div>
+        <!-- saving amount -->
+        <h2 id="saving" class="font-semibold text-black text-lg">Saving Amount : <span>0</span>$</h2>
+        <!-- remaining amount -->
+        <h2 id="remaining" class="font-semibold text-black text-lg mb-3">Remaining Amount : <span>0</span>$</h2>
          </div>
-          <!-- Money input Area Start-->
-
-
-
-
-
-
-
-
-
-
-
     </main>
 
+    <script src="js/app.js"></script>
 </body>
 </html>
