@@ -6,7 +6,7 @@
             // input validation
             for (const input of allInputs) {
               if (!inputValidation(input,'expenses','balance')) { // validate input using function
-                return; // if any input is incorrect, break this event
+                return; 
               }
             }
           
@@ -14,7 +14,7 @@
             const balance = allInputs[0] - totalCost; // getting ballance
             document.getElementById('expenses').innerText = 'Total Expenses: ' + totalCost + '$';// set total spending
             if (balance >= 0) {
-              document.getElementById('balance').style.color = 'linen';
+              document.getElementById('balance').style.color = 'black';
               document.getElementById('balance').innerText = 'Balance: ' + balance + '$' ; // set balance
             } else {
               document.getElementById('balance').innerText = 'Expenses is bigger than Balance !!!'; //set invalid ballance
@@ -38,7 +38,7 @@
             const balance = allInputs[0] - allInputs[1] - allInputs[2] - allInputs[3] - savingAmount; // getting ballance
             document.getElementById('saving').innerText = 'Saving Amount : ' + savingAmount + '$'; // setting saving amount
             if (balance>=0) {
-              document.getElementById('remaining').style.color = 'linen';
+              document.getElementById('remaining').style.color = 'black';
               document.getElementById('remaining').innerText = 'Remaining Amount : ' + balance + '$' ; // set balance
             } else {
               document.getElementById('remaining').style.color = 'khaki';
@@ -55,8 +55,8 @@
             if (typeof inp == 'number' && inp >= 0) {
               return true;
             } else {
-              document.getElementById(class2).innerText = 'Invalid input !'; //setting invalid input
-              document.getElementById(class2).style.color = 'khaki';
+              document.getElementById(class2).innerText = 'String is Invalid input !'; //setting invalid input
+              document.getElementById(class2).style.color = 'red';
               document.getElementById(class1).innerText='';
               return false;
             }
