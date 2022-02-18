@@ -25,7 +25,7 @@
           // save button click event
           document.getElementById('save-btn').addEventListener('click', function () {
             // taking all inputs in an array using function
-            const allInputs = [getInputValue('income'), getInputValue('food'), getInputValue('rent'), getInputValue('cloth'), getInputValue('savingPercent')]
+            const allInputs = [getInputValue('income-input'), getInputValue('food'), getInputValue('rent'), getInputValue('cloth'), getInputValue('savingPercent')]
            
             // input validation
             for (const input of allInputs) {
