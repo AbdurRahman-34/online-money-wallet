@@ -18,7 +18,7 @@
               document.getElementById('balance').innerText = 'Balance: ' + balance + '$' ; // set balance
             } else {
               document.getElementById('balance').innerText = 'Expenses is bigger than Balance !!!'; //set invalid ballance
-              document.getElementById('balance').style.color = 'khaki';
+              document.getElementById('balance').style.color = 'red';
             }
           
           })
@@ -36,18 +36,18 @@
             
             const savingAmount = allInputs[0] * allInputs[4] / 100; //calculating saving amount
             const balance = allInputs[0] - allInputs[1] - allInputs[2] - allInputs[3] - savingAmount; // getting ballance
-            document.getElementById('saving').innerText = 'Saving Amount : ' + savingAmount + '$'; // setting saving amount
+            document.getElementById('saving').innerText = 'Saving Amount : ' + savingAmount + '$'; // saving amount
             if (balance>=0) {
               document.getElementById('remaining').style.color = 'black';
               document.getElementById('remaining').innerText = 'Remaining Amount : ' + balance + '$' ; // set balance
             } else {
-              document.getElementById('remaining').style.color = 'khaki';
+              document.getElementById('remaining').style.color = 'red';
               document.getElementById('remaining').innerText = 'You can not save this much amount !!' ; // set balance
             }
           })
           
           function getInputValue(idName) {
-            return parseInt(document.getElementById(idName).value); //getting input value 
+            return parseInt(document.getElementById(idName).value); // input value 
           }
           
           //validation of expense fields
@@ -55,7 +55,7 @@
             if (typeof inp == 'number' && inp >= 0) {
               return true;
             } else {
-              document.getElementById(class2).innerText = 'String is Invalid input !'; //setting invalid input
+              document.getElementById(class2).innerText = 'String is Invalid input !'; // invalid input
               document.getElementById(class2).style.color = 'red';
               document.getElementById(class1).innerText='';
               return false;
