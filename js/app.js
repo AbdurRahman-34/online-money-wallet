@@ -55,7 +55,7 @@
             if (typeof inp == 'number' && inp >= 0) {
               return true;
             } else {
-              document.getElementById(class2).innerText = 'String is Invalid input !'; // invalid input
+              document.getElementById(class2).innerText = 'String is Invalid Input !'; // invalid input
               document.getElementById(class2).style.color = 'red';
               document.getElementById(class1).innerText='';
               return false;
