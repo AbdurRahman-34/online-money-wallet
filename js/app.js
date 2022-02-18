@@ -1,7 +1,7 @@
         // calculate button click event
         document.getElementById('calculate-btn').addEventListener('click', function () {
             // taking all inputs in an array using function
-            const allInputs = [getInputValue('income'), getInputValue('food'), getInputValue('rent'), getInputValue('cloth')]
+            const allInputs = [getInputValue('income-input'), getInputValue('food'), getInputValue('rent'), getInputValue('cloth')]
           
             // input validation
             for (const input of allInputs) {
